@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    width: 400px;
+    color: #fff;
+}
+
+.contact-box h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input, .input-box textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus, .input-box textarea:focus {
+    border-color: #ff9800;
+}
+
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s ease;
+    /* background-color: rgba(18, 18, 18, 0.9);  Matches the form background */
+    padding: 0 5px;
+}
+
+.input-box input:not(:placeholder-shown) ~ label,
+.input-box textarea:not(:placeholder-shown) ~ label,
+.input-box input:focus ~ label,
+.input-box textarea:focus ~ label {
+    top: -20px;
+    left: 10px;
+    color: #ff9800;
+    font-size: 12px;
+}
+
+.input-box textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    width: 100%;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background: #e68900;
+}

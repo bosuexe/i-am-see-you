@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0" />
+    <title>i am see you</title>
+    <link rel="stylesheet"
+     href="style.css" />
+  </head>
+
+  <body>
+    <div class="contact-box">
+      <h2>Your dreem text me</h2>
+
+      <form action="https://api.web3forms.com/submit"
+      method="POST"
+      >
+        <input type="hidden"
+        name="access_key"
+        value="1fcea697-056b-4e89-9e52-12d58788c35a"
+        />
+        <div class="input-box">
+          <input type="text" name="name" required placeholder=" " />
+          <label>Name</label>
+        </div>
+
+        <div class="input-box">
+          <input type="email" name="email" required placeholder=" " />
+          <label>Email</label>
+        </div>
+
+        <div class="input-box">
+          <textarea name="message" required placeholder=" "></textarea>
+          <label>Message</label>
+        </div>
+
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>
